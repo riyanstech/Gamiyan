@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#1a1410">
+  <meta name="description" content="Idle clicker game bertema tambang. Tap, upgrade, dan kumpulkan batu sebanyak mungkin!">
   <title>⛏️ Tambang Kaya</title>
 
+  <!-- Favicon & Manifest (relative path) -->
   <link rel="icon" href="./public/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="./public/manifest.json">
+
+  <!-- Stylesheet (relative path) -->
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
 
 <div class="game">
+  <!-- HEADER -->
   <header class="header">
     <div class="ore-count">
       <span class="icon">🪨</span>
@@ -23,10 +28,12 @@
     </div>
   </header>
 
+  <!-- TAP AREA -->
   <main class="tap-area" id="tapArea">
     <div class="mine-rock" id="mineRock">⛏️</div>
   </main>
 
+  <!-- UPGRADES -->
   <section class="upgrades-panel">
     <nav class="panel-tabs">
       <button class="tab active" data-tab="tap">⛏️ Tap</button>
@@ -38,6 +45,7 @@
   <footer class="footer">Tap tambang untuk mulai menambang 💰</footer>
 </div>
 
+<!-- MODAL OFFLINE EARNINGS -->
 <div class="modal-overlay" id="offlineModal">
   <div class="modal">
     <div class="modal-icon">⛏️💰</div>
@@ -48,8 +56,10 @@
   </div>
 </div>
 
+<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
+<!-- ENTRY POINT JS (relative path, type=module) -->
 <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
