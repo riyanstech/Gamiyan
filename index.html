@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#1a1410">
+  <title>⛏️ Tambang Kaya</title>
+
+  <link rel="icon" href="./public/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./public/manifest.json">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+<div class="game">
+  <header class="header">
+    <div class="ore-count">
+      <span class="icon">🪨</span>
+      <span id="oreCount">0</span>
+    </div>
+    <div class="per-second">
+      +<span class="value" id="perSecond">0</span> / detik
+    </div>
+  </header>
+
+  <main class="tap-area" id="tapArea">
+    <div class="mine-rock" id="mineRock">⛏️</div>
+  </main>
+
+  <section class="upgrades-panel">
+    <nav class="panel-tabs">
+      <button class="tab active" data-tab="tap">⛏️ Tap</button>
+      <button class="tab" data-tab="auto">⚙️ Otomatis</button>
+    </nav>
+    <div class="upgrades-list" id="upgradesList"></div>
+  </section>
+
+  <footer class="footer">Tap tambang untuk mulai menambang 💰</footer>
+</div>
+
+<div class="modal-overlay" id="offlineModal">
+  <div class="modal">
+    <div class="modal-icon">⛏️💰</div>
+    <h2>Selamat Datang Kembali!</h2>
+    <p>Tambangmu terus berjalan selama kamu pergi</p>
+    <div class="reward" id="offlineReward">+0 🪨</div>
+    <button class="modal-btn" id="offlineClaim">Klaim Hasil Tambang</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

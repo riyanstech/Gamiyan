@@ -1,0 +1,40 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header { padding: 16px 16px 8px; text-align: center; flex-shrink: 0; }
+
+.tap-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 0;
+  padding: 8px;
+}
+
+.upgrades-panel {
+  flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(26,20,16,0.95), rgba(13,10,8,0.98));
+  border-top: 2px solid rgba(255,180,60,0.2);
+  border-radius: 20px 20px 0 0;
+  max-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -10px 40px rgba(0,0,0,0.6);
+}
+
+.footer {
+  padding: 6px 16px 10px;
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
